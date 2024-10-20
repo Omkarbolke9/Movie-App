@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Rated Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="top-rated.html">Top Rated</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li>
+                <input type="text" id="searchInput" placeholder="Search for movies...">
+                <button id="searchBtn">Search</button>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="top-rated-movies" class="movie-grid"></section>
+
+<div id="pagination">
+    <button id="prevPage" disabled>Previous</button>
+    <span id="currentPage">Page 1</span>
+    <button id="nextPage">Next</button>
+</div>
+<div class="movies-container"></div>
+    <div class="movie">
+        <img src="poster1.jpg" alt="Movie 1">
+        <h2>Movie Title 1</h2>
+    </div>
+    <div class="movie">
+        <img src="poster2.jpg" alt="Movie 2">
+        <h2>Movie Title 2</h2>
+    </div>
+    <div class="movie">
+        <img src="poster3.jpg" alt="Movie 3">
+        <h2>Movie Title 3</h2>
+    </div>
+    <!-- More movies go here -->
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
